@@ -34,6 +34,6 @@ jobs:
     - name: Attest generated files
       id: attest
       if: github.repository == 'vanilla-os/live-iso'
-      uses: actions/attest-build-provenance@v1
+      uses: actions/attest-build-provenance@v4
       with:
         subject-path: 'amd64/*.iso, amd64/*.txt'

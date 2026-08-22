@@ -25,7 +25,7 @@ jobs:
     - name: Get current date
       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
 
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         name: VanillaOS 2 Orchid ${{ env.CURRENT_DATE }}
         path: builds/
